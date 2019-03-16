@@ -1,0 +1,14 @@
+.action {
+  background-color: red;
+  padding:2px;
+}
+.keybind{
+  background-color: grey;
+  padding:2px;
+}
+
+.container {
+  margin: 5px;
+  background-color: green;
+  padding:5px;
+}

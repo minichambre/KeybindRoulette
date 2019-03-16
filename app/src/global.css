@@ -1,23 +1,23 @@
 /*
  * Global constants goes here
  */
+ /*
 :root {
     --primary-color: #42b983;
 }
-
+*/
 
 /*
  * Global CSS goes here, it requires to use :global before each style
  */
+ /*
 :global html {
     height: 100%;
 }
 :global body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin: auto;
+  margin: auto;
+  width: 77%;
+  display: block;
 }
 :global #app {
     color: #2c3e50;
@@ -30,4 +30,11 @@
 }
 :global .hello {
     color: var(--primary-color);
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Assistant');
+
+:global body {
+  margin:0;
+  font-family: "Assistant", sans-serif;
 }

@@ -94,86 +94,145 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return App; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_Logo___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Logo/ */ \"./app/src/components/Logo/index.jsx\");\n/* harmony import */ var _components_Link___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Link/ */ \"./app/src/components/Link/index.jsx\");\n/* harmony import */ var _assets_electron_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/electron.png */ \"./app/src/assets/electron.png\");\n/* harmony import */ var _assets_electron_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_electron_png__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _assets_react_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/react.png */ \"./app/src/assets/react.png\");\n/* harmony import */ var _assets_react_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_react_png__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _assets_webpack_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/webpack.png */ \"./app/src/assets/webpack.png\");\n/* harmony import */ var _assets_webpack_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_webpack_png__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n\nconst logos = [_assets_electron_png__WEBPACK_IMPORTED_MODULE_4___default.a, _assets_react_png__WEBPACK_IMPORTED_MODULE_5___default.a, _assets_webpack_png__WEBPACK_IMPORTED_MODULE_6___default.a];\n\nclass App extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n    render() {\n        const logosRender = logos.map((logo, index) => {\n            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo___WEBPACK_IMPORTED_MODULE_2__[\"default\"], { key: index, src: logo });\n        });\n\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            'div',\n            null,\n            logosRender,\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'div',\n                { className: 'hello' },\n                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                    'h1',\n                    null,\n                    'Hello React!'\n                )\n            ),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'p',\n                null,\n                'If you are trying to build Electron apps using React, or you just want to play around with them, feel free to use this seed as a starting point.'\n            ),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'p',\n                null,\n                'Pay attention to how everything inside src/ folder is bundled into build/ folder, how global and scoped CSS work, how to compose React components, or simply how Webpack changes relative image paths to public paths after bundling the assets.'\n            ),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'p',\n                null,\n                'Check out the docs for\\xA0',\n                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                    _components_Link___WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n                    { to: 'https://electronjs.org/docs' },\n                    'Electron'\n                ),\n                ',\\xA0',\n                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                    _components_Link___WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n                    { to: 'https://reactjs.org/docs/hello-world.html' },\n                    'React '\n                ),\n                ' and\\xA0',\n                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                    _components_Link___WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n                    { to: 'https://webpack.js.org/configuration/' },\n                    'Webpack 4'\n                ),\n                '. Customize this template as you wish by adding any fancy tool you are used to. If you have any issue, please file an issue at this seed\\'s\\xA0',\n                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                    _components_Link___WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n                    { to: 'https://github.com/pastahito/electron-react-webpack' },\n                    'repository'\n                ),\n                '.'\n            )\n        );\n    }\n}\n\n//# sourceURL=webpack:///./app/src/App.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return App; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header */ \"./app/src/components/Header/index.jsx\");\n/* harmony import */ var _components_FileLoader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/FileLoader */ \"./app/src/components/FileLoader/index.jsx\");\n/* harmony import */ var _components_KeyBindContainer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/KeyBindContainer */ \"./app/src/components/KeyBindContainer/index.jsx\");\n/* harmony import */ var _components_Application__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Application */ \"./app/src/components/Application/index.jsx\");\n\n\n\n\n\n\nclass App extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n    render() {\n\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Application__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null);\n    }\n}\n\n//# sourceURL=webpack:///./app/src/App.jsx?");
 
 /***/ }),
 
-/***/ "./app/src/assets/electron.png":
-/*!*************************************!*\
-  !*** ./app/src/assets/electron.png ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"electron.png?36744c98c7129e6424f39bd630f4a0d7\";\n\n//# sourceURL=webpack:///./app/src/assets/electron.png?");
-
-/***/ }),
-
-/***/ "./app/src/assets/react.png":
-/*!**********************************!*\
-  !*** ./app/src/assets/react.png ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"react.png?37fe8322b169ddbdeabf75930e886ac6\";\n\n//# sourceURL=webpack:///./app/src/assets/react.png?");
-
-/***/ }),
-
-/***/ "./app/src/assets/webpack.png":
-/*!************************************!*\
-  !*** ./app/src/assets/webpack.png ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"webpack.png?77da35b51ee86c0c01bff3a48095d798\";\n\n//# sourceURL=webpack:///./app/src/assets/webpack.png?");
-
-/***/ }),
-
-/***/ "./app/src/components/Link/index.jsx":
-/*!*******************************************!*\
-  !*** ./app/src/components/Link/index.jsx ***!
-  \*******************************************/
+/***/ "./app/src/components/Application/index.jsx":
+/*!**************************************************!*\
+  !*** ./app/src/components/Application/index.jsx ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Link; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var electron__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! electron */ \"electron\");\n/* harmony import */ var electron__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(electron__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/Link/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass Link extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n\n    link(url) {\n        electron__WEBPACK_IMPORTED_MODULE_1__[\"shell\"].openExternal(url);\n    }\n\n    render() {\n        console.log(_styles_css__WEBPACK_IMPORTED_MODULE_2___default.a);\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            'a',\n            { href: '#', onClick: () => {\n                    this.link(this.props.to);\n                }, className: _styles_css__WEBPACK_IMPORTED_MODULE_2___default.a.link },\n            this.props.children\n        );\n    }\n}\n\n//# sourceURL=webpack:///./app/src/components/Link/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Application; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/Application/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _ContentPanel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../ContentPanel */ \"./app/src/components/ContentPanel/index.jsx\");\n\n\n\n\nclass Application extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  constructor(props) {\n    super(props);\n    this.state = {\n      context: \"Configuration\"\n    };\n    this.updateContext = this.updateContext.bind(this);\n  }\n\n  updateContext(context) {\n    this.setState({ context: context });\n  }\n\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.root },\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'div',\n        { id: 'title', className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.titleBar },\n        'Keybind Roulettle - League of Legends'\n      ),\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'div',\n        { id: 'contentpane', className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.contentPane },\n        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n          'div',\n          { id: 'navbar', className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.navBar },\n          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            'div',\n            { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.navItem, onClick: () => this.updateContext(\"Configuration\") },\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n              'h1',\n              null,\n              ' Configuration '\n            )\n          ),\n          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            'div',\n            { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.navItem, onClick: () => this.updateContext(\"Key Bindings\") },\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n              'h1',\n              null,\n              ' Key Bindings '\n            )\n          ),\n          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            'div',\n            { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.navItem, onClick: () => this.updateContext(\"Profile Selection\") },\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n              'h1',\n              null,\n              ' Profile Selection '\n            )\n          )\n        ),\n        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n          'div',\n          { id: 'content', className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.content },\n          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ContentPanel__WEBPACK_IMPORTED_MODULE_2__[\"default\"], { header: this.state.context })\n        )\n      )\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/Application/index.jsx?");
 
 /***/ }),
 
-/***/ "./app/src/components/Link/styles.css":
-/*!********************************************!*\
-  !*** ./app/src/components/Link/styles.css ***!
-  \********************************************/
+/***/ "./app/src/components/Application/styles.css":
+/*!***************************************************!*\
+  !*** ./app/src/components/Application/styles.css ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"tone\":\"sFVP9dDAE84wfL1CUC_NG\",\"link\":\"_1FRk9e-PmvCebL7xwPN-Hf sFVP9dDAE84wfL1CUC_NG\"};\n\n//# sourceURL=webpack:///./app/src/components/Link/styles.css?");
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"titleBar\":\"g8IpPWeEM1WuaNIoVXftb\",\"navBar\":\"_2ZfUJQrPW1niArgDVg_keX\",\"navItem\":\"_TapJdSK9vwgXWbGOjbvT\",\"content\":\"_3VpPlEPqvs2a0cv6VCCrEX\",\"contentPane\":\"_1AfGwWZdte8DbwjHPFSsB6\"};\n\n//# sourceURL=webpack:///./app/src/components/Application/styles.css?");
 
 /***/ }),
 
-/***/ "./app/src/components/Logo/index.jsx":
-/*!*******************************************!*\
-  !*** ./app/src/components/Logo/index.jsx ***!
-  \*******************************************/
+/***/ "./app/src/components/ContentPanel/index.jsx":
+/*!***************************************************!*\
+  !*** ./app/src/components/ContentPanel/index.jsx ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Logo; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/Logo/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Logo extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n    render() {\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('img', { src: this.props.src, className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.logo });\n    }\n}\n\n//# sourceURL=webpack:///./app/src/components/Logo/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return ContentPanel; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/ContentPanel/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass ContentPanel extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.root },\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'h1',\n        null,\n        ' ',\n        this.props.header,\n        ' '\n      )\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/ContentPanel/index.jsx?");
 
 /***/ }),
 
-/***/ "./app/src/components/Logo/styles.css":
-/*!********************************************!*\
-  !*** ./app/src/components/Logo/styles.css ***!
-  \********************************************/
+/***/ "./app/src/components/ContentPanel/styles.css":
+/*!****************************************************!*\
+  !*** ./app/src/components/ContentPanel/styles.css ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"logo\":\"_1WcHgGtKrxqKCsGYj62eVK\"};\n\n//# sourceURL=webpack:///./app/src/components/Logo/styles.css?");
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"root\":\"aAQAAIPEzPXt9V2fICz_X\"};\n\n//# sourceURL=webpack:///./app/src/components/ContentPanel/styles.css?");
+
+/***/ }),
+
+/***/ "./app/src/components/FileLoader/index.jsx":
+/*!*************************************************!*\
+  !*** ./app/src/components/FileLoader/index.jsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return FileLoader; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/FileLoader/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass FileLoader extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.container },\n      'Enter the path:',\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { type: 'text', value: 'location' }),\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { type: 'submit', value: 'submit' })\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/FileLoader/index.jsx?");
+
+/***/ }),
+
+/***/ "./app/src/components/FileLoader/styles.css":
+/*!**************************************************!*\
+  !*** ./app/src/components/FileLoader/styles.css ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"header\":\"Z3P1k_Ig2CbPVwh3rsuhH\"};\n\n//# sourceURL=webpack:///./app/src/components/FileLoader/styles.css?");
+
+/***/ }),
+
+/***/ "./app/src/components/Header/index.jsx":
+/*!*********************************************!*\
+  !*** ./app/src/components/Header/index.jsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Header; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/Header/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Header extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.header },\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'h1',\n        null,\n        ' Keybind Roulette '\n      ),\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'h3',\n        null,\n        ' for '\n      ),\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'h2',\n        null,\n        ' League of Legends '\n      )\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/Header/index.jsx?");
+
+/***/ }),
+
+/***/ "./app/src/components/Header/styles.css":
+/*!**********************************************!*\
+  !*** ./app/src/components/Header/styles.css ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"header\":\"t3A9kD5-139RM3KhRrAjT\"};\n\n//# sourceURL=webpack:///./app/src/components/Header/styles.css?");
+
+/***/ }),
+
+/***/ "./app/src/components/KeyBind/index.jsx":
+/*!**********************************************!*\
+  !*** ./app/src/components/KeyBind/index.jsx ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return KeyBindContainer; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/KeyBind/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass KeyBindContainer extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n    render() {\n        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n            'div',\n            { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.container },\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'span',\n                { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.action },\n                ' Walk forwards '\n            ),\n            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n                'span',\n                { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.keybind },\n                ' Left Ctrl '\n            )\n        );\n    }\n}\n\n//# sourceURL=webpack:///./app/src/components/KeyBind/index.jsx?");
+
+/***/ }),
+
+/***/ "./app/src/components/KeyBind/styles.css":
+/*!***********************************************!*\
+  !*** ./app/src/components/KeyBind/styles.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"action\":\"_21LtQA6ml_UT47Lf8GYGRe\",\"keybind\":\"_2xrSKFdK_pnICVIL8iCs3o\",\"container\":\"_5RVppL9EzJSyJiFIYWj4f\"};\n\n//# sourceURL=webpack:///./app/src/components/KeyBind/styles.css?");
+
+/***/ }),
+
+/***/ "./app/src/components/KeyBindContainer/index.jsx":
+/*!*******************************************************!*\
+  !*** ./app/src/components/KeyBindContainer/index.jsx ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return KeyBindContainer; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/KeyBindContainer/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _KeyBind__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../KeyBind */ \"./app/src/components/KeyBind/index.jsx\");\n\n\n\n\nclass KeyBindContainer extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  constructor(props) {\n    super(props);\n    this.state = {\n      collectionOfKeybinds: []\n    };\n  }\n\n  componentDidMount() {\n    let keybinds = [];\n    for (let x = 0; x < 30; x++) {\n      keybinds.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_KeyBind__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n    }\n    this.setState({ collectionOfKeybinds: keybinds });\n  }\n\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.container },\n      this.state.collectionOfKeybinds\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/KeyBindContainer/index.jsx?");
+
+/***/ }),
+
+/***/ "./app/src/components/KeyBindContainer/styles.css":
+/*!********************************************************!*\
+  !*** ./app/src/components/KeyBindContainer/styles.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"container\":\"_17cI8szOlkREUUzFhsN6YE\"};\n\n//# sourceURL=webpack:///./app/src/components/KeyBindContainer/styles.css?");
 
 /***/ }),
 
@@ -329,17 +388,6 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 "use strict";
 eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ \"./node_modules/scheduler/cjs/scheduler-tracing.development.js\");\n}\n\n//# sourceURL=webpack:///./node_modules/scheduler/tracing.js?");
-
-/***/ }),
-
-/***/ "electron":
-/*!***************************!*\
-  !*** external "electron" ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"electron\");\n\n//# sourceURL=webpack:///external_%22electron%22?");
 
 /***/ })
 

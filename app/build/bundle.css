@@ -1,53 +1,127 @@
-/*
- * Every class name will be hashed so it can be used their own component scoped
- * Use classes instead of ids
- */
-
-._1WcHgGtKrxqKCsGYj62eVK {
-    height: 100px;
+@import url(https://fonts.googleapis.com/css?family=Assistant);.t3A9kD5-139RM3KhRrAjT {
+  text-align: center;
 }
-/*
- * Every class name will be hashed so it can be used their own component scoped
- * Use classes instead of ids
- */
-
-.sFVP9dDAE84wfL1CUC_NG {
-    color: var(--primary-color);    /* Using global constants example */
+.Z3P1k_Ig2CbPVwh3rsuhH {
+  text-align: center;
+}
+._17cI8szOlkREUUzFhsN6YE {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: yellow;
+  max-height: 72vh;
+}
+._21LtQA6ml_UT47Lf8GYGRe {
+  background-color: red;
+  padding:2px;
+}
+._2xrSKFdK_pnICVIL8iCs3o{
+  background-color: grey;
+  padding:2px;
 }
 
-._1FRk9e-PmvCebL7xwPN-Hf {                 /* Composition example */
-    text-decoration: none;
+._5RVppL9EzJSyJiFIYWj4f {
+  margin: 5px;
+  background-color: green;
+  padding:5px;
+}
+.g8IpPWeEM1WuaNIoVXftb{
+  background-color: purple;
+  height:5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 3vh;
+  -webkit-app-region: drag;
+}
+
+._2ZfUJQrPW1niArgDVg_keX{
+  background-color: #940094;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+}
+
+._TapJdSK9vwgXWbGOjbvT {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:1.8vh;
+  color: #b7b8b9;
+  text-shadow: 3px 3px 10px black;
+  border-bottom-left-radius: 15px;
+}
+
+._TapJdSK9vwgXWbGOjbvT:hover{
+  background-color: #b50eb5;
+  cursor: pointer;
+  transition: 1s ease-out;
+}
+
+._3VpPlEPqvs2a0cv6VCCrEX {
+  background:#942694;
+    width: 100%;
+    -webkit-app-region: no-drag;
+    border-bottom-right-radius: 15px;
+}
+
+._1AfGwWZdte8DbwjHPFSsB6{
+  display:flex;
+}
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px black;
+
+}
+.aAQAAIPEzPXt9V2fICz_X {
+  color:white;
 }
 /*
  * Global constants goes here
  */
+ /*
 :root {
     --primary-color: #42b983;
 }
-
+*/
 
 /*
  * Global CSS goes here, it requires to use :global before each style
  */
-html {
+ /*
+:global html {
     height: 100%;
 }
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin: auto;
+:global body {
+  margin: auto;
+  width: 77%;
+  display: block;
 }
-#app {
+:global #app {
     color: #2c3e50;
     max-width: 600px;
     font-family: Source Sans Pro, Helvetica, sans-serif;
     text-align: center;
 }
-#app p {
+:global #app p {
     text-align: justify;
 }
-.hello {
+:global .hello {
     color: var(--primary-color);
+}
+*/
+
+body {
+  margin:0;
+  font-family: "Assistant", sans-serif;
 }
