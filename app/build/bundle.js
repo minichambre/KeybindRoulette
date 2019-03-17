@@ -121,6 +121,29 @@ eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"titleBar\":
 
 /***/ }),
 
+/***/ "./app/src/components/Configurator/index.jsx":
+/*!***************************************************!*\
+  !*** ./app/src/components/Configurator/index.jsx ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Configurator; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/Configurator/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _FileLoader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../FileLoader */ \"./app/src/components/FileLoader/index.jsx\");\n\n\n\n\nclass Configurator extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { id: 'configOptions', className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.root },\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FileLoader__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/Configurator/index.jsx?");
+
+/***/ }),
+
+/***/ "./app/src/components/Configurator/styles.css":
+/*!****************************************************!*\
+  !*** ./app/src/components/Configurator/styles.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"root\":\"_3jAY9fTJn3PvG3FzxGt4mN\"};\n\n//# sourceURL=webpack:///./app/src/components/Configurator/styles.css?");
+
+/***/ }),
+
 /***/ "./app/src/components/ContentPanel/index.jsx":
 /*!***************************************************!*\
   !*** ./app/src/components/ContentPanel/index.jsx ***!
@@ -129,7 +152,7 @@ eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"titleBar\":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return ContentPanel; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/ContentPanel/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass ContentPanel extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.root },\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'h1',\n        null,\n        ' ',\n        this.props.header,\n        ' '\n      )\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/ContentPanel/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return ContentPanel; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/ContentPanel/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Configurator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../Configurator */ \"./app/src/components/Configurator/index.jsx\");\n\n\n\n\nclass ContentPanel extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  constructor(props) {\n    super(props);\n  }\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.root },\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'h1',\n        null,\n        ' ',\n        this.props.header,\n        ' '\n      ),\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'div',\n        { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.contentContainer },\n        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Configurator__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)\n      )\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/ContentPanel/index.jsx?");
 
 /***/ }),
 
@@ -140,7 +163,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"root\":\"aAQAAIPEzPXt9V2fICz_X\"};\n\n//# sourceURL=webpack:///./app/src/components/ContentPanel/styles.css?");
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"root\":\"aAQAAIPEzPXt9V2fICz_X\",\"contentContainer\":\"_3Om-sVaKIcxJwjFIg6K_v4\"};\n\n//# sourceURL=webpack:///./app/src/components/ContentPanel/styles.css?");
 
 /***/ }),
 
@@ -152,7 +175,7 @@ eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"root\":\"aA
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return FileLoader; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/FileLoader/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass FileLoader extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.container },\n      'Enter the path:',\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { type: 'text', value: 'location' }),\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { type: 'submit', value: 'submit' })\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/FileLoader/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return FileLoader; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./app/src/components/FileLoader/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar app = __webpack_require__(/*! electron */ \"electron\").remote;\nvar dialog = app.dialog;\nvar fs = __webpack_require__(/*! fs */ \"fs\");\nclass FileLoader extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\n  constructor(props) {\n    super(props);\n    this.state = {\n      fileLocation: null\n    };\n    this.openFile = this.openFile.bind(this);\n  }\n\n  openFile() {\n    dialog.showOpenDialog(filenames => {\n      if (filenames === undefined) {\n        console.log(\"nothing selected\");\n        return;\n      } else {\n        this.setState({ fileLocation: filenames });\n      }\n    });\n  }\n  render() {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n      'div',\n      { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.container },\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'h2',\n        null,\n        ' Configure Settings for Keybind Roulette '\n      ),\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\n        'p',\n        null,\n        'Enter the path of your League of Legends config file '\n      ),\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.fileBrowser, type: 'text', value: this.state.fileLocation || \"Select your league of legends config file\" }),\n      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { className: _styles_css__WEBPACK_IMPORTED_MODULE_1___default.a.openFileBrowser, type: 'submit', value: 'browse', onClick: this.openFile })\n    );\n  }\n}\n\n//# sourceURL=webpack:///./app/src/components/FileLoader/index.jsx?");
 
 /***/ }),
 
@@ -163,7 +186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"header\":\"Z3P1k_Ig2CbPVwh3rsuhH\"};\n\n//# sourceURL=webpack:///./app/src/components/FileLoader/styles.css?");
+eval("// removed by extract-text-webpack-plugin\nmodule.exports = {\"fileBrowser\":\"tR6Dq0MwMFzRX_8YY440f\",\"openFileBrowser\":\"_1hsRp3h5NAT9MN50uaUF6q\"};\n\n//# sourceURL=webpack:///./app/src/components/FileLoader/styles.css?");
 
 /***/ }),
 
@@ -388,6 +411,28 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 "use strict";
 eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ \"./node_modules/scheduler/cjs/scheduler-tracing.development.js\");\n}\n\n//# sourceURL=webpack:///./node_modules/scheduler/tracing.js?");
+
+/***/ }),
+
+/***/ "electron":
+/*!***************************!*\
+  !*** external "electron" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"electron\");\n\n//# sourceURL=webpack:///external_%22electron%22?");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"fs\");\n\n//# sourceURL=webpack:///external_%22fs%22?");
 
 /***/ })
 
