@@ -9,7 +9,7 @@ export default class Configurator extends Component {
     render() {
         return (
           <div id="configOptions"className={styles.root}>
-            <FileLoader/>
+            <FileLoader notifyParent={this.props.notifyParent}/>
           </div>
         );
     }

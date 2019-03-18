@@ -12,7 +12,8 @@ export default class FileLoader extends Component {
       }
       this.openFile = this.openFile.bind(this);
       this.readFromFile = this.readFromFile.bind(this);
-      this.digestLine = this.digestLine.bind(this);
+      this.validateFile = this.validateFile.bind(this);
+      this.digestFile = this.digestFile.bind(this);
     }
 
     /* Opens a dialogue box which allows the user to select the path
@@ -38,28 +39,54 @@ export default class FileLoader extends Component {
       });
 
       //Start reading the file one line at a time
-      rd.on('line', function(line){
-        if (line == "" || line == undefined) {
-          return;
-        }
-        let split = line.split('=');
-        let key = split.shift();
-        let val = "";
-
-        if (split.length > 1){
-          val = split.join();
-        } else {
-          val = split[0];
-        }
-
-        config[key] = val;
+      rd.on('line', (line) => {
+        this.digestFile(line, config);
       });
 
       rd.on('close', () => {
         console.log(config);
+        if (this.validateFile(config)){
+          this.setState({complete: true, config: config});
+          this.props.notifyParent("config", config);
+        } else {
+          //show error
+        }
       })
+
     }
 
+    validateFile(config){
+      var someExpectedKeys = ["evtSelectAlly1", "evtPushToTalk", "evtEmoteLaugh", "evtCastSpell1", "evtSmartCastItem6"];
+      let valid = true;
+      someExpectedKeys.forEach( (key) => {
+        if (key in config) {
+        } else {
+          valid = false;
+        }
+      });
+      if (valid == true){
+        return true;
+      } else {
+          return false;
+      }
+    }
+
+    digestFile(line, config){
+      if (line == "" || line == undefined) {
+        return;
+      }
+      let split = line.split('=');
+      let key = split.shift();
+      let val = "";
+
+      if (split.length > 1){
+        val = split.join();
+      } else {
+        val = split[0];
+      }
+
+      config[key] = val;
+    }
 
     render() {
         return (

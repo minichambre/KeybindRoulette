@@ -1,8 +1,19 @@
 .container {
+  width: 75%;
+  max-height: 50vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   flex-wrap: wrap;
-  background-color: yellow;
-  max-height: 72vh;
+  overflow-y: scroll;
+}
+
+h2,h3 {
+  text-align: center;
+}
+
+.abilities{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }

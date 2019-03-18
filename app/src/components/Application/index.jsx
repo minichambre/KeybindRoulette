@@ -6,13 +6,19 @@ export default class Application extends Component {
     constructor(props){
       super(props);
       this.state ={
-        context: "Configuration"
+        context: "Configuration",
+        configFile: null
       }
       this.updateContext = this.updateContext.bind(this);
+      this.notifyParent = this.notifyParent.bind(this);
     }
 
     updateContext(context){
       this.setState({context:context});
+    }
+
+    notifyParent(key, val){
+      this.setState({configFile:val});
     }
 
     render() {
@@ -35,7 +41,7 @@ export default class Application extends Component {
                 </div>
               </div>
               <div id="content"className={styles.content}>
-                <ContentPanel header={this.state.context}/>
+                <ContentPanel notifyParent={this.notifyParent} header={this.state.context} configFile={this.state.configFile}/>
               </div>
             </div>
           </div>
