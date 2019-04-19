@@ -14,6 +14,8 @@ export default class Application extends Component {
       }
       this.updateContext = this.updateContext.bind(this);
       this.notifyParent = this.notifyParent.bind(this);
+      this.minimise = this.minimise.bind(this);
+      this.closeWindow = this.closeWindow.bind(this);
     }
 
     updateContext(context){
@@ -24,6 +26,16 @@ export default class Application extends Component {
       this.setState({configFile:val});
     }
 
+    minimise(){
+      const ipc = require('electron').ipcRenderer;
+      ipc.send('minimise-main-window');
+    }
+
+    closeWindow(){
+      const ipc = require('electron').ipcRenderer;
+      ipc.send('close-main-window');
+    }
+
     render() {
         return (
           <div className={styles.root}>
@@ -32,9 +44,9 @@ export default class Application extends Component {
                 Keybind Roulettle - League of Legends
               </span>
               <div id="windowControls" className={styles.windowControls}>
-                <img src={minImage} className={styles.windowControl}/>
-                <img src={maxImage} className={styles.windowControl}/>
-                <img src={closeImage} className={styles.windowControl}/>
+                <img src={minImage} className={styles.windowControl} onClick={this.minimise}/>
+                <img src={maxImage} className={styles.windowControl} onClick={this.minimise}/>
+                <img src={closeImage} className={styles.windowControl} onClick={this.closeWindow}/>
               </div>
             </div>
 
