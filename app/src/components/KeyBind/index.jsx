@@ -11,14 +11,16 @@ export default class KeyBindContainer extends Component {
       switch(this.props.type){
         case "spell":
           return styles.spell;
+        case "item":
+          return styles.item;
       }
     }
 
     render() {
         return (
-          <div id="keyBind" className={this.props.type == "spell" ? styles.spell : styles.container}>
-            <span className={styles.action}> {this.props.name} </span>
-            <span className={styles.keybind}> {this.props.keybind} </span>
+          <div id="keyBind" className={this.getCorrectClass()}>
+            <span id="CircleKey" className={styles.action}> q </span>
+            <span id="newKeyBind" className={styles.keybind}> {this.props.keybind} </span>
 
           </div>
         );
