@@ -1,6 +1,9 @@
 import React, {Component}  from 'react'
 import styles from './styles.css'
 import ContentPanel from './../ContentPanel'
+import closeImage from "./../../Assets/close.svg";
+import minImage from "./../../Assets/chevron-down.svg";
+import maxImage from "./../../Assets/stop.svg";
 
 export default class Application extends Component {
     constructor(props){
@@ -24,8 +27,15 @@ export default class Application extends Component {
     render() {
         return (
           <div className={styles.root}>
-            <div id="title" className={styles.titleBar}>
-              Keybind Roulettle - League of Legends
+            <div id="titleBar" className={styles.titleBar}>
+              <span className={styles.titleText}>
+                Keybind Roulettle - League of Legends
+              </span>
+              <div id="windowControls" className={styles.windowControls}>
+                <img src={minImage} className={styles.windowControl}/>
+                <img src={maxImage} className={styles.windowControl}/>
+                <img src={closeImage} className={styles.windowControl}/>
+              </div>
             </div>
 
             <div id="contentpane"className={styles.contentPane}>

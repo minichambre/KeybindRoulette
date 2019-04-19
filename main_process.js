@@ -12,9 +12,9 @@ let mainWindow
 app.on('ready', () => {
 
     mainWindow = new BrowserWindow({width: 1280,height: 720,frame:false,transparent:true})
-    BrowserWindow.addDevToolsExtension(
-      path.join(os.homedir(), 'AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\fmkadmapgofadopljbjfkapdkoienihi\\3.6.0_0' )
-    )
+    // BrowserWindow.addDevToolsExtension(
+    //   path.join(os.homedir(), 'AppData\\Local\\Google\\Chrome\\User Data\\Default\\Extensions\\fmkadmapgofadopljbjfkapdkoienihi\\3.6.0_0' )
+    // )
     mainWindow.loadURL(`file://${__dirname}/app/index.html`)
 
 })

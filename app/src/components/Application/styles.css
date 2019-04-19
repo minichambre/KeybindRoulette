@@ -1,24 +1,42 @@
 .titleBar{
   background-color: purple;
   height:5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   font-size: 3vh;
   -webkit-app-region: drag;
+      border-bottom: 4px solid purple;
+      display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.titleText{
+margin-left: 39%;
+}
+
+.windowControls {
+  display: inline-flex;
+  width:10%;
+  -webkit-app-region: no-drag;
+  margin-top: 0.3%;
+}
+.windowControl:hover {
+  background-color: red;
+  cursor: pointer;
+
+}
+.windowControl{
+  height:3vh;
+    transition: background-color 2s ease-out;
+    padding: 6%
 }
 
 .navBar{
   background-color: #940094;
-  width: 20vw;
   display: flex;
-  flex-direction: column;
-  height: 95vh;
   justify-content: space-around;
   align-items: center;
-  border-bottom-left-radius: 15px;
 }
 
 .navItem {
@@ -31,7 +49,6 @@
   font-size:1.8vh;
   color: #b7b8b9;
   text-shadow: 3px 3px 10px black;
-  border-bottom-left-radius: 15px;
 }
 
 .navItem:hover{
@@ -42,6 +59,7 @@
 
 .content {
   background:#942694;
+  height:85vh;
     width: 100%;
     -webkit-app-region: no-drag;
     border-bottom-right-radius: 15px;
@@ -49,4 +67,5 @@
 
 .contentPane{
   display:flex;
+  flex-direction: column;
 }
